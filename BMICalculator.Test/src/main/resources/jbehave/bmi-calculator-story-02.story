@@ -1,10 +1,8 @@
 Meta:
-@author          Nikolay Vasilev
-@date:           15.06.2011
-@event:          Seminar
+@author          Jose Carvajal
+@date:           21.03.2014
 @topic:          Behaviour Driven Development with Java
-@organization:   Bulgarian Java Users Group
-@licence:        Some rights reserved. CC BY 3.0, 2011
+@licence:        Some rights reserved. CC BY 3.0, 2014
 
 Scenario:  Simple BMI calculator validation used for MultipleStories embedder example (1)
 
@@ -17,3 +15,10 @@ Scenario:  Simple BMI calculator validation used for MultipleStories embedder ex
 Given a body mass index calculator
 When a patient is with mass 85 kg and height 1.85 m
 Then patient's body mass index is 24.83564567565918
+
+Scenario:  Simple BMI calculator validation used for MultipleStories embedder example (3)
+
+Given a body mass index calculator
+When the user pass to the calculator a value for mass 85 kg
+When the user pass to the calculator a value for height 1.85 m
+Then the calculator shows that the value for the users's body mass index is 24.83564567565918

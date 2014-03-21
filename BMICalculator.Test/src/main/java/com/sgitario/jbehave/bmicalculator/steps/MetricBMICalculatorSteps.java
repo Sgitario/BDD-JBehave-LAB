@@ -42,17 +42,17 @@ public class MetricBMICalculatorSteps {
 		bmi = bmiCalculator.calculate(healthRecord);
 	}
 
-	@When("the user pass to the calculator a value for mass <mass> kg")
+	@When("the user pass to the calculator a value for mass $mass kg")
 	public void userPopulatesMass(@Named("mass") float mass) {
 		healthRecord.setWeight(mass);
 	}
 
-	@When("the user pass to the calculator a value for height <height> m")
+	@When("the user pass to the calculator a value for height $height m")
 	public void userPopulatesHeight(@Named("height") float height) {
 		healthRecord.setHeight(height);
 	}
 
-	@Then("the calculator shows that the value for the users's body mass index is <bmi>")
+	@Then("the calculator shows that the value for the users's body mass index is $bmi")
 	public void calculateAndVerifyBmi(@Named("bmi") double bmiValue) {
 		bmi = bmiCalculator.calculate(healthRecord);
 		Assert.assertEquals(bmiValue, bmi.value(), DELTA);

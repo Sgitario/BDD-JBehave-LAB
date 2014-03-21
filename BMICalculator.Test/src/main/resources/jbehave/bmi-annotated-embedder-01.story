@@ -1,10 +1,8 @@
 Meta:
-@author          Nikolay Vasilev
-@date:           15.06.2011
-@event:          Seminar
+@author          Jose Carvajal
+@date:           21.03.2014
 @topic:          Behaviour Driven Development with Java
-@organization:   Bulgarian Java Users Group
-@licence:        Some rights reserved. CC BY 3.0, 2011
+@licence:        Some rights reserved. CC BY 3.0, 2014
 
 Scenario:  Simple BMI calculator validation used for AnnotatedEmbedder example
 

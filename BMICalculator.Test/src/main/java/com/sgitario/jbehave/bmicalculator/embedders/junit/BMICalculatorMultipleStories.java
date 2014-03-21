@@ -14,6 +14,7 @@ import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
 import com.sgitario.jbehave.bmicalculator.steps.MetricBMICalculatorSteps;
+import com.sgitario.jbehave.bmicalculator.steps.WeightClassifierSteps;
 
 public class BMICalculatorMultipleStories extends JUnitStories {
 
@@ -38,7 +39,7 @@ public class BMICalculatorMultipleStories extends JUnitStories {
     @Override
     public List<CandidateSteps> candidateSteps() {
             return new InstanceStepsFactory(configuration(),
-                            new MetricBMICalculatorSteps()).createCandidateSteps();
+                            new MetricBMICalculatorSteps(), new WeightClassifierSteps()).createCandidateSteps();
     }
 
     @Override

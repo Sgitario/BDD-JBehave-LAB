@@ -39,7 +39,7 @@ public class AnnotatedEmbedder extends InjectableEmbedder {
 
        // --- Constants -----------------------------------------------------------
 
-       private static final String INCLUDED_STORIES = "**/*annotated-embedder-01.story";
+       private static final String INCLUDED_STORIES = "**/*annotated-embedder-0*.story";
        private static final String EXCLUDED_STORIES = "";
 
        // --- Methods (JUnit) -----------------------------------------------------
